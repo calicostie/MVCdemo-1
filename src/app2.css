@@ -1,0 +1,31 @@
+#app2 {
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+#app2 .tab-bar {
+    display: flex;
+}
+
+#app2 .tab-bar>li {
+    display: flex;
+    width: 50%;
+    border: 1px solid black;
+    background-color: black;
+}
+
+
+#app2 .tab-bar>li.selected {
+    background-color: green;
+}
+
+#app2 .tab-content {}
+
+#app2 .tab-content>li {
+    display: none;
+}
+
+#app2 .tab-content>li.active {
+    display: block;
+}

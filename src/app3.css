@@ -1,0 +1,17 @@
+#app3 {}
+
+#app3 .square {
+    /* class用.选择，id用#，没有id或class用> */
+    border: 1px solid yellow;
+    width: 10vw;
+    height: 10vw;
+    margin-left: 10vw;
+    margin-top: 10vw;
+    /* 不确定页面大小，用vw */
+    transition: transform 1s;
+}
+
+#app3 .square.active {
+    border-radius: 100%;
+    transform: translateX(15vw);
+}
