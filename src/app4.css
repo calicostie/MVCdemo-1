@@ -1,28 +1,28 @@
-#app4 {}
+#app4 {
+}
 
 @keyframes change {
+	/* 声明动画 */
+	0% {
+		background: blueviolet;
+	}
 
-    /* 声明动画 */
-    0% {
-        background: blueviolet;
-    }
-
-    100% {
-        background: white;
-    }
+	100% {
+		background: white;
+	}
 }
 
 #app4 .yuan {
-    border: 1px solid blueviolet;
-    width: 20vw;
-    height: 20vw;
-    margin-top: 10vw;
-    margin-left: 10vw;
-    border-radius: 50%;
+	border: 1px solid blueviolet;
+	width: 20vw;
+	height: 20vw;
+	margin-top: 10vw;
+	margin-left: 10vw;
+	border-radius: 50%;
 }
 
 #app4 .yuan.active {
-    /* active中间不能有空格 */
-    animation: change 0.8s infinite alternate linear;
-    /* 无限往复线性变换 */
+	/* active中间不能有空格 */
+	animation: change 0.8s infinite alternate linear;
+	/* 无限往复线性变换 */
 }

@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+* ::before,
+::after {
+	box-sizing: border-box;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+body {
+	overflow: hidden;
+	/* 去掉滚动条，要加在body里 */
+}
+
+body > .page {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+body > .page > section {
+	border: 1px solid red;
+	width: 50vw;
+	height: 50vh;
+}
+
+#app1 {
+	/* 选择器用#，有id的div才能用选择器 */
+	flex-direction: column;
+}
+
+#app1 .output {
+}
+
+#app1 .actions {
+}
+
+#app2 {
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+#app2 .tab-bar {
+	display: flex;
+}
+
+#app2 .tab-bar > li {
+	display: flex;
+	width: 50%;
+	border: 1px solid black;
+	background-color: black;
+}
+
+#app2 .tab-bar > li.selected {
+	background-color: green;
+}
+
+#app2 .tab-content {
+}
+
+#app2 .tab-content > li {
+	display: none;
+}
+
+#app2 .tab-content > li.active {
+	display: block;
+}
+
+#app3 {
+}
+
+#app3 .square {
+	/* class用.选择，id用#，没有id或class用> */
+	border: 1px solid yellow;
+	width: 10vw;
+	height: 10vw;
+	margin-left: 10vw;
+	margin-top: 10vw;
+	/* 不确定页面大小，用vw */
+	transition: transform 1s;
+	/* 过渡 */
+}
+
+#app3 .square.active {
+	border-radius: 100%;
+	transform: translateX(15vw);
+}
+
+#app4 {
+}
+
+@keyframes change {
+	/* 声明动画 */
+	0% {
+		background: blueviolet;
+	}
+
+	100% {
+		background: white;
+	}
+}
+
+#app4 .yuan {
+	border: 1px solid blueviolet;
+	width: 20vw;
+	height: 20vw;
+	margin-top: 10vw;
+	margin-left: 10vw;
+	border-radius: 50%;
+}
+
+#app4 .yuan.active {
+	/* active中间不能有空格 */
+	animation: change 0.8s infinite alternate linear;
+	/* 无限往复线性变换 */
+}
+
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */

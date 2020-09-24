@@ -1,8 +1,10 @@
 #app1 {
-    /* 选择器用#，有id的div才能用选择器 */
-    flex-direction: column;
+	/* 选择器用#，有id的div才能用选择器 */
+	flex-direction: column;
 }
 
-#app1 .output {}
+#app1 .output {
+}
 
-#app1 .actions {}
+#app1 .actions {
+}
